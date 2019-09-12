@@ -28,7 +28,36 @@ namespace COCOMO
             PM = a * Math.Pow(SIZE1, b);
             TM = c * Math.Pow(PM, d);
             ResultPM.Text = (Math.Round(PM,0)).ToString() + " чел. × мес. ";
-            ResultTM.Text = (Math.Round(TM,0)).ToString() + " колендарных месяцев";
+            ResultTM.Text = (Math.Round(TM,0)).ToString() + " календарных месяцев";
+        }
+
+        private void SIZEStrok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label6, "PM (People×Month) – трудоемкость (чел.×мес.)");
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label7, "TM (Time at Month) – время разработки в календарных месяцах");
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label8, "объем программного продукта в тысячах строк исходного текста (Kilo of Source Line of Code – KSLOC)");
+
         }
     }
 }

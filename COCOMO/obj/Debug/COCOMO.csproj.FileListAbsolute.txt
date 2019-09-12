@@ -10,3 +10,4 @@ C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ �
 C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.Menu.resources
 C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.BasicLvl.resources
 C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.RasprMetod.resources
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.PoluNezMetod.resources

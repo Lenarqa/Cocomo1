@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace COCOMO
 {
-    public partial class RasprMetod : Form
+    public partial class PoluNezMetod : Form
     {
-        public RasprMetod()
+        public PoluNezMetod()
         {
             InitializeComponent();
-        }
+        }     
 
         private void button1_Click(object sender, EventArgs e)
         {
             double PM, TM, a, b, c, d, SIZE1;
-            a = 2.4;
-            b = 1.05;
+            a = 3;
+            b = 1.12;
             c = 2.5;
-            d = 0.38;
+            d = 0.35;
             if (SIZEStrok.Text != String.Empty)
             {
                 SIZE1 = Double.Parse(SIZEStrok.Text);
@@ -36,16 +36,13 @@ namespace COCOMO
             {
                 MessageBox.Show("Укажите объем программного продукта в тыс.,строк кода!");
             }
+            
         }
 
-        private void SIZEStrok_KeyPress(object sender, KeyPressEventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
-
-            char number = e.KeyChar;
-            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
-            {
-                e.Handled = true;
-            }
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label8, "объем программного продукта в тысячах строк исходного текста (Kilo of Source Line of Code – KSLOC)");
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -60,17 +57,11 @@ namespace COCOMO
             t.SetToolTip(label7, "TM (Time at Month) – время разработки в календарных месяцах");
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-            ToolTip t = new ToolTip();
-            t.SetToolTip(label8, "объем программного продукта в тысячах строк исходного текста (Kilo of Source Line of Code – KSLOC)");
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            BasicLvl form2 = new BasicLvl();
+            BasicLvl bl = new BasicLvl();
             this.Hide();
-            form2.ShowDialog();
+            bl.ShowDialog();
             this.Show();
             Close();
         }

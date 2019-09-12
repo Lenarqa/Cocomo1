@@ -73,6 +73,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Полунезависимый";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -83,7 +84,7 @@
             this.button3.Text = "Встроенный";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // BasicLvl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +94,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "BasicLvl";
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();

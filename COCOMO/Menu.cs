@@ -17,7 +17,7 @@ namespace COCOMO
             InitializeComponent();
         }
 
-        BasicLvl form2 = new BasicLvl();
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -26,6 +26,7 @@ namespace COCOMO
 
         private void button1_Click(object sender, EventArgs e)
         {
+            BasicLvl form2 = new BasicLvl();
             this.Hide();
             form2.ShowDialog();
             this.Show();

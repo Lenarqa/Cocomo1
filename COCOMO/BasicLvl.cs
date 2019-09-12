@@ -17,12 +17,22 @@ namespace COCOMO
             InitializeComponent();
         }
 
-        RasprMetod rm = new RasprMetod();
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
+            RasprMetod rm = new RasprMetod();
             this.Hide();
             rm.ShowDialog();
+            this.Show();
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PoluNezMetod prm = new PoluNezMetod();
+            this.Hide();
+            prm.ShowDialog();
             this.Show();
             Close();
         }

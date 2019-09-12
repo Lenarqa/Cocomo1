@@ -64,5 +64,14 @@ namespace COCOMO
             this.Show();
             Close();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Menu m = new Menu();
+            this.Hide();
+            m.ShowDialog();
+            this.Show();
+            Close();
+        }
     }
 }

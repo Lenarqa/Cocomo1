@@ -65,5 +65,14 @@ namespace COCOMO
             this.Show();
             Close();
         }
+
+        private void SIZEStrok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

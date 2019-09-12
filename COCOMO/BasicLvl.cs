@@ -25,7 +25,7 @@ namespace COCOMO
             this.Hide();
             rm.ShowDialog();
             this.Show();
-            Close();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace COCOMO
             this.Hide();
             prm.ShowDialog();
             this.Show();
-            Close();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace COCOMO
             this.Hide();
             vm.ShowDialog();
             this.Show();
-            Close();
+            this.Close();
         }
     }
 }

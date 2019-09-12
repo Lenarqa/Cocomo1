@@ -164,6 +164,7 @@
             this.SIZEStrok.Name = "SIZEStrok";
             this.SIZEStrok.Size = new System.Drawing.Size(100, 30);
             this.SIZEStrok.TabIndex = 12;
+            this.SIZEStrok.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SIZEStrok_KeyPress);
             // 
             // button2
             // 

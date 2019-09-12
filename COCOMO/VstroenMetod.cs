@@ -58,12 +58,13 @@ namespace COCOMO
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BasicLvl bl = new BasicLvl();
+            BasicLvl form2 = new BasicLvl();
             this.Hide();
-            bl.ShowDialog();
+            form2.ShowDialog();
             this.Show();
             Close();
         }
+
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -72,6 +73,15 @@ namespace COCOMO
             m.ShowDialog();
             this.Show();
             Close();
+        }
+
+        private void SIZEStrok_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
+            {
+                e.Handled = true;
+            }
         }
     }
 }

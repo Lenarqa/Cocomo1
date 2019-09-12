@@ -72,6 +72,12 @@
     <Compile Include="RasprMetod.Designer.cs">
       <DependentUpon>RasprMetod.cs</DependentUpon>
     </Compile>
+    <Compile Include="VstroenMetod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VstroenMetod.Designer.cs">
+      <DependentUpon>VstroenMetod.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </Compile>
     <EmbeddedResource Include="RasprMetod.resx">
       <DependentUpon>RasprMetod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VstroenMetod.resx">
+      <DependentUpon>VstroenMetod.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

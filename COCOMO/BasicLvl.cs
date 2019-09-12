@@ -36,5 +36,14 @@ namespace COCOMO
             this.Show();
             Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            VstroenMetod vm = new VstroenMetod();
+            this.Hide();
+            vm.ShowDialog();
+            this.Show();
+            Close();
+        }
     }
 }

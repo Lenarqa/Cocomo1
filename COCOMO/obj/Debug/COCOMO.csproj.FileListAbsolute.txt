@@ -1,0 +1,12 @@
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\bin\Debug\COCOMO.exe.config
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\bin\Debug\COCOMO.exe
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\bin\Debug\COCOMO.pdb
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.csprojAssemblyReference.cache
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.Properties.Resources.resources
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.GenerateResource.cache
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.csproj.CoreCompileInputs.cache
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.exe
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.pdb
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.Menu.resources
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.BasicLvl.resources
+C:\Users\lenar\OneDrive\Рабочий стол\3 курс 1 семест\ИМ Миньков\COCOMO\COCOMO\COCOMO\obj\Debug\COCOMO.RasprMetod.resources

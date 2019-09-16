@@ -46,17 +46,13 @@ namespace COCOMO
             this.Close();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Menu form2 = new Menu();
+            this.Hide();
+            form2.ShowDialog();
+            this.Show();
+            Close();
+        }
     }
 }

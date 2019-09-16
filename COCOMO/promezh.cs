@@ -13,7 +13,7 @@ namespace COCOMO
     public partial class promezh : Form
     {
 
-        double a, b, k = 1;
+        double a, b, g, d, k = 1;
         double[] z = new double[15];
         
 
@@ -80,6 +80,8 @@ namespace COCOMO
                 SIZE1 = Double.Parse(textBox1.Text);
                 PM = k* a * Math.Pow(SIZE1, b);
                 ResultPM.Text = (Math.Round(PM, 0)).ToString() + " чел. × мес. ";
+                TM = g * Math.Pow(PM, d);
+                ResultTM.Text = (Math.Round(TM, 0)).ToString() + " календарных месяцев";
             }
             else
             {
@@ -94,7 +96,7 @@ namespace COCOMO
             {
                 k *= z[i];
             }
-            label19.Text = "K = " + k;
+            label19.Text = "EAF = " + k;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -418,6 +420,46 @@ namespace COCOMO
             }
         }
 
+        private void label37_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label37, "объем программного продукта в тысячах строк исходного текста (Kilo of Source Line of Code – KSLOC)");
+        }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label38, "PM – трудоемкость(чел.× мес.)");
+            
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label22, "TM (Time at Month) – время разработки в календарных месяцах; ");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Menu form2 = new Menu();
+            this.Hide();
+            form2.ShowDialog();
+            this.Show();
+            Close();
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label39, "EAF(Effort Adjustment Factor) – произведение выбранных атрибутов стоимости.");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label4, "На этом уровне базовая модель уточнена за счет ввода дополнительных 15 «атрибутов стоимости» (или факторов затрат) Cost Drivers (CDk), которые представлены ниже.");
+        }
+
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox2.SelectedItem.ToString().Equals("Очень низкий"))
@@ -448,16 +490,22 @@ namespace COCOMO
             {
                 a = 3.2;
                 b = 1.05;
+                g = 2.5;
+                d = 0.38;
             }
             else if (comboBox1.SelectedItem.ToString().Equals("Полунезависимый"))
             {
                 a = 3.0;
                 b = 1.12;
+                g = 2.5;
+                d = 0.35;
             }
             else if (comboBox1.SelectedItem.ToString().Equals("Встроенный"))
             {
                 a = 2.8;
                 b = 1.20;
+                g = 2.5;
+                d = 0.32;
             }
         }
 

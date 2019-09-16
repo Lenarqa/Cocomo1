@@ -47,5 +47,14 @@ namespace COCOMO
             System.Diagnostics.Process.Start("C:\\Users\\lenar\\OneDrive\\Рабочий стол\\3 курс 1 семест\\ИМ Миньков\\COCOMO\\COCOMO\\COCOMO\\Resources\\Spravka.pdf");
             //System.Diagnostics.Process.Start("\\Resources\\Spravka.pdf");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cocomo2 form2 = new cocomo2();
+            this.Hide();
+            form2.ShowDialog();
+            this.Show();
+            Close();
+        }
     }
 }

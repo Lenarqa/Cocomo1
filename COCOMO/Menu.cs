@@ -32,5 +32,14 @@ namespace COCOMO
             this.Show();
             Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            promezh form2 = new promezh();
+            this.Hide();
+            form2.ShowDialog();
+            this.Show();
+            Close();
+        }
     }
 }

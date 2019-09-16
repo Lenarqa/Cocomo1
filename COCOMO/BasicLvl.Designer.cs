@@ -64,6 +64,7 @@
             this.label2.Size = new System.Drawing.Size(276, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Выберите тип проекта";
+            
             // 
             // button2
             // 

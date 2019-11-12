@@ -79,9 +79,9 @@ namespace COCOMO
             {
                 SIZE1 = Double.Parse(textBox1.Text);
                 PM = k* a * Math.Pow(SIZE1, b);
-                ResultPM.Text = (Math.Round(PM, 0)).ToString() + " чел. × мес. ";
+                ResultPM.Text = (Math.Round(PM, 3)).ToString() + " чел. × мес. ";
                 TM = g * Math.Pow(PM, d);
-                ResultTM.Text = (Math.Round(TM, 0)).ToString() + " календарных месяцев";
+                ResultTM.Text = (Math.Round(TM, 3)).ToString() + " календарных месяцев";
             }
             else
             {
@@ -413,11 +413,13 @@ namespace COCOMO
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
+            /*char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
             {
                 e.Handled = true;
-            }
+            }*/
+            char c = e.KeyChar;
+            e.Handled = !(char.IsDigit(c) || c == ',' || c == '\b');
         }
 
         private void label37_Click(object sender, EventArgs e)

@@ -29,8 +29,8 @@ namespace COCOMO
                 SIZE1 = Double.Parse(SIZEStrok.Text);
                 PM = a * Math.Pow(SIZE1, b);
                 TM = c * Math.Pow(PM, d);
-                ResultPM.Text = (Math.Round(PM, 0)).ToString() + " чел. × мес. ";
-                ResultTM.Text = (Math.Round(TM, 0)).ToString() + " календарных месяцев";
+                ResultPM.Text = (Math.Round(PM, 3)).ToString() + " чел. × мес. ";
+                ResultTM.Text = (Math.Round(TM, 3)).ToString() + " календарных месяцев";
             }
             else
             {
@@ -68,11 +68,13 @@ namespace COCOMO
 
         private void SIZEStrok_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char number = e.KeyChar;
+            /*char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8) // цифры и клавиша BackSpace
             {
                 e.Handled = true;
-            }
+            }*/
+            char c = e.KeyChar;
+            e.Handled = !(char.IsDigit(c) || c == ',' || c == '\b');
         }
     }
 }

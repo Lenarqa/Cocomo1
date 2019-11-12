@@ -108,7 +108,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "BasicLvl";
-            this.Text = "Form2";
+            this.Text = "COCOMO basic";
             this.ResumeLayout(false);
             this.PerformLayout();
 

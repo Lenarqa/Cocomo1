@@ -728,6 +728,8 @@ namespace COCOMO
             e.Handled = !(char.IsDigit(c) || c == ',' || c == '\b');
         }
 
+
+
         private void comboBox35_SelectedIndexChanged(object sender, EventArgs e)//многоабанентская разработка
         {
             if (comboBox35.SelectedItem.ToString().Equals("Очень низкий"))

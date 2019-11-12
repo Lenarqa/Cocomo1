@@ -165,7 +165,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 31);
             this.button1.TabIndex = 26;
-            this.button1.Text = "Рассчитать результат";
+            this.button1.Text = "Расчитать результат";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -196,7 +196,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SIZEStrok);
             this.Name = "VstroenMetod";
-            this.Text = "VstroenMetod";
+            this.Text = "COCOMO build-in";
             this.ResumeLayout(false);
             this.PerformLayout();
 

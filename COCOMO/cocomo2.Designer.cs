@@ -167,11 +167,11 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.label37);
             this.groupBox7.Controls.Add(this.label22);
             this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.Controls.Add(this.ResultTM);
             this.groupBox7.Controls.Add(this.label38);
-            this.groupBox7.Controls.Add(this.label37);
             this.groupBox7.Controls.Add(this.SIZEStrok);
             this.groupBox7.Controls.Add(this.label21);
             this.groupBox7.Controls.Add(this.label20);
@@ -297,7 +297,8 @@
             this.groupBox4.Size = new System.Drawing.Size(1188, 641);
             this.groupBox4.TabIndex = 90;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Множители трудоемкости посе проработки для детальной оценки архитектуры";
+            this.groupBox4.Text = " Выберите множители трудоемкости посе проработки для детальной оценки архитектуры" +
+    "";
             this.groupBox4.Visible = false;
             // 
             // groupBox9
@@ -939,7 +940,7 @@
             this.groupBox2.Size = new System.Drawing.Size(495, 346);
             this.groupBox2.TabIndex = 88;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Этап 1 факторы масштаба";
+            this.groupBox2.Text = "Выберите факторы масштаба";
             // 
             // comboBox11
             // 
@@ -1071,7 +1072,7 @@
             this.groupBox1.Size = new System.Drawing.Size(211, 124);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Рассчет EAF";
+            this.groupBox1.Text = "Расчет EAF";
             // 
             // label39
             // 
@@ -1090,7 +1091,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 23);
             this.button2.TabIndex = 36;
-            this.button2.Text = "Рассчет ";
+            this.button2.Text = "Расчет ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -1205,7 +1206,7 @@
             this.ClientSize = new System.Drawing.Size(1045, 770);
             this.Controls.Add(this.panel1);
             this.Name = "cocomo2";
-            this.Text = "cocomo2";
+            this.Text = "COCOMO cocomo2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox7.ResumeLayout(false);

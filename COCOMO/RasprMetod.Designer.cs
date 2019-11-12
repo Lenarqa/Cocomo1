@@ -50,7 +50,6 @@
             this.SIZEStrok.Name = "SIZEStrok";
             this.SIZEStrok.Size = new System.Drawing.Size(100, 30);
             this.SIZEStrok.TabIndex = 0;
-
             this.SIZEStrok.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SIZEStrok_KeyPress);
             // 
             // button1
@@ -60,7 +59,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 31);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Рассчитать результат";
+            this.button1.Text = "Расчитать результат";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

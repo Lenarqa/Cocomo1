@@ -14,7 +14,12 @@ namespace COCOMO
     {
         String[] stadii = { "Предварительная", "Детальная" };
         String[] SFozenka = { "Очень низкий", "Низкий", "Средний", "Высокий", "Очень высокий" };
+        String[] ozenkaPromLvl = { "Критически низкий", "Очень низкий", "Низкий", "Средний", "Высокий", "Очень высокий", "Критический" };
+        String[] ruseMas = {"Низкий", "Средний", "Высокий", "Очень высокий", "Критический" };
+        String[] ruseMas2 = { "Очень низкий", "Низкий", "Средний", "Высокий"};
+        double[] EMozenka = new double[7];
         double A, B = 0.91, n, SF, EAF;
+        double[] SFmas = new double[5]; // массив факторов масштаба
 
         private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -112,7 +117,203 @@ namespace COCOMO
             }
         }
 
-        double[] SFmas = new double[5];
+        private void comboBox13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox13.SelectedItem.ToString().Equals("Критически низкий"))
+            {
+                EMozenka[0] = 2.12;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Очень низкий"))
+            {
+                EMozenka[0] = 1.62;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[0] = 1.26;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[0] = 1;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[0] = 0.83;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[0] = 0.63;
+            }
+            else if (comboBox13.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[0] = 0.5;
+            }
+        }
+
+        private void comboBox14_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox14.SelectedItem.ToString().Equals("Критически низкий"))
+            {
+                EMozenka[1] = 1.59;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Очень низкий"))
+            {
+                EMozenka[1] = 1.33;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[1] = 1.22;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[1] = 1;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[1] = 0.87;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[1] = 0.74;
+            }
+            else if (comboBox14.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[1] = 0.62;
+            }
+        }
+
+        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox15.SelectedItem.ToString().Equals("Критически низкий"))
+            {
+                EMozenka[2] = 0.49;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Очень низкий"))
+            {
+                EMozenka[2] = 0.60;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[2] = 0.83;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[2] = 1;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[2] = 1.33;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[2] = 1.91;
+            }
+            else if (comboBox15.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[2] = 2.72;
+            }
+        }
+
+        private void comboBox16_SelectedIndexChanged(object sender, EventArgs e)//Разработка повторного использования
+        {
+            if (comboBox16.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[3] = 0.95;
+            }
+            else if (comboBox16.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[3] = 1;
+            }
+            else if (comboBox16.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[3] = 1.07;
+            }
+            else if (comboBox16.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[3] = 1.15;
+            }
+            else if (comboBox16.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[3] = 1.24;
+            }
+        }
+
+        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)//сложность платформы разработки.
+        {
+            if (comboBox17.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[4] = 0.87;
+            }
+            else if (comboBox17.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[4] = 1;
+            }
+            else if (comboBox17.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[4] = 1.29;
+            }
+            else if (comboBox17.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[4] = 1.81;
+            }
+            else if (comboBox17.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[4] = 2.61;
+            }
+        }
+
+        private void comboBox18_SelectedIndexChanged(object sender, EventArgs e)//оборудование.
+        {
+            if (comboBox18.SelectedItem.ToString().Equals("Критически низкий"))
+            {
+                EMozenka[5] = 1.43;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Очень низкий"))
+            {
+                EMozenka[5] = 1.30;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[5] = 1.10;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[5] = 1;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[5] = 0.87;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Очень высокий"))
+            {
+                EMozenka[5] = 0.73;
+            }
+            else if (comboBox18.SelectedItem.ToString().Equals("Критический"))
+            {
+                EMozenka[5] = 0.62;
+            }
+        }
+
+        private void comboBox19_SelectedIndexChanged(object sender, EventArgs e)//требуемое выполнение графика работ
+        {
+            if (comboBox19.SelectedItem.ToString().Equals("Очень низкий"))
+            {
+                EMozenka[6] = 1.43;
+            }
+            else if (comboBox19.SelectedItem.ToString().Equals("Низкий"))
+            {
+                EMozenka[6] = 1.14;
+            }
+            else if (comboBox19.SelectedItem.ToString().Equals("Средний"))
+            {
+                EMozenka[6] = 1;
+            }
+            else if (comboBox19.SelectedItem.ToString().Equals("Высокий"))
+            {
+                EMozenka[6] = 1;
+            }
+        }
+
+       
 
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -149,23 +350,42 @@ namespace COCOMO
             comboBox9.Items.AddRange(SFozenka);
             comboBox10.Items.AddRange(SFozenka);
             comboBox11.Items.AddRange(SFozenka);
+            comboBox13.Items.AddRange(ozenkaPromLvl);
+            comboBox14.Items.AddRange(ozenkaPromLvl);
+            comboBox15.Items.AddRange(ozenkaPromLvl);
+            comboBox16.Items.AddRange(ruseMas);
+            comboBox17.Items.AddRange(ruseMas);
+            comboBox18.Items.AddRange(ozenkaPromLvl);
+            comboBox19.Items.AddRange(ruseMas2);
+
             comboBox12.SelectedItem = "Предварительная";
             comboBox7.SelectedItem = "Средний";
             comboBox8.SelectedItem = "Средний";
             comboBox9.SelectedItem = "Средний";
             comboBox10.SelectedItem = "Средний";
             comboBox11.SelectedItem = "Средний";
+            comboBox13.SelectedItem = "Средний";
+            comboBox14.SelectedItem = "Средний";
+            comboBox15.SelectedItem = "Средний";
+            comboBox16.SelectedItem = "Средний";
+            comboBox17.SelectedItem = "Средний";
+            comboBox18.SelectedItem = "Средний";
+            comboBox19.SelectedItem = "Средний";
         }
 
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox12.SelectedItem.Equals("Предварительная"))
             {
+                groupBox3.Visible = true;
+                groupBox4.Visible = false;
                 A = 2.97;
                 n = 7;
             }
             else if (comboBox12.SelectedItem.Equals("Детальная"))
             {
+                groupBox3.Visible = false;
+                groupBox4.Visible = true;
                 A = 2.45;
                 n = 17;
             }

@@ -56,5 +56,18 @@ namespace COCOMO
             this.Show();
             Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible)
+            {
+                panel1.Visible = false;
+            }
+            else
+            {
+                panel1.Visible = true;
+            }
+        }
+
     }
 }

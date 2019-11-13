@@ -64,13 +64,15 @@
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.ResultTM = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -78,11 +80,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -484,16 +484,6 @@
             this.panel1.Size = new System.Drawing.Size(867, 1433);
             this.panel1.TabIndex = 35;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(52, 1312);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 42);
-            this.button3.TabIndex = 64;
-            this.button3.Text = "Назад";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -504,6 +494,78 @@
             this.label22.TabIndex = 63;
             this.label22.Text = "?";
             this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label38.Location = new System.Drawing.Point(52, 1225);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(24, 25);
+            this.label38.TabIndex = 58;
+            this.label38.Text = "?";
+            this.label38.Click += new System.EventHandler(this.label38_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label37.Location = new System.Drawing.Point(59, 1112);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(24, 25);
+            this.label37.TabIndex = 57;
+            this.label37.Text = "?";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.comboBox13);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.comboBox16);
+            this.groupBox2.Controls.Add(this.comboBox12);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.comboBox11);
+            this.groupBox2.Controls.Add(this.comboBox14);
+            this.groupBox2.Controls.Add(this.comboBox15);
+            this.groupBox2.Controls.Add(this.comboBox10);
+            this.groupBox2.Controls.Add(this.comboBox7);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.comboBox8);
+            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.comboBox9);
+            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Location = new System.Drawing.Point(12, 120);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(641, 933);
+            this.groupBox2.TabIndex = 66;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Выберите атрибуты стоимости проекта";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label24.Location = new System.Drawing.Point(47, 1070);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(548, 25);
+            this.label24.TabIndex = 65;
+            this.label24.Text = "Введите объем программного продукта в тысячах строк";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(52, 1312);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(141, 42);
+            this.button3.TabIndex = 64;
+            this.button3.Text = "Назад";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label23
             // 
@@ -536,28 +598,6 @@
             this.label4.Text = "?";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label38.Location = new System.Drawing.Point(52, 1225);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(24, 25);
-            this.label38.TabIndex = 58;
-            this.label38.Text = "?";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label37.Location = new System.Drawing.Point(59, 1112);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(24, 25);
-            this.label37.TabIndex = 57;
-            this.label37.Text = "?";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -587,7 +627,7 @@
             this.groupBox1.Size = new System.Drawing.Size(167, 124);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Расчет EAF";
+            this.groupBox1.Text = "Расчитать EAF";
             // 
             // label39
             // 
@@ -606,7 +646,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 23);
             this.button2.TabIndex = 36;
-            this.button2.Text = "Расчет ";
+            this.button2.Text = "Расчитать ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -630,46 +670,6 @@
             this.label20.TabIndex = 37;
             this.label20.Text = "PM = ";
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label24.Location = new System.Drawing.Point(47, 1070);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(548, 25);
-            this.label24.TabIndex = 65;
-            this.label24.Text = "Введите объем программного продукта в тысячах строк";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.comboBox13);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.comboBox16);
-            this.groupBox2.Controls.Add(this.comboBox12);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.comboBox11);
-            this.groupBox2.Controls.Add(this.comboBox14);
-            this.groupBox2.Controls.Add(this.comboBox15);
-            this.groupBox2.Controls.Add(this.comboBox10);
-            this.groupBox2.Controls.Add(this.comboBox7);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox8);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.comboBox9);
-            this.groupBox2.Controls.Add(this.comboBox4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 120);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(641, 933);
-            this.groupBox2.TabIndex = 66;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Выберите атрибуты стоимости проекта";
-            // 
             // promezh
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -692,10 +692,10 @@
             this.Text = "COCOMO intermediate";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

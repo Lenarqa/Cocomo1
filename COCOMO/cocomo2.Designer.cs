@@ -31,11 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.ResultTM = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.SIZEStrok = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -120,6 +117,7 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -134,6 +132,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label42);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.groupBox7);
             this.panel1.Controls.Add(this.groupBox4);
@@ -152,7 +151,7 @@
             this.panel1.Controls.Add(this.comboBox4);
             this.panel1.Location = new System.Drawing.Point(-33, -409);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1336, 2013);
+            this.panel1.Size = new System.Drawing.Size(1254, 2013);
             this.panel1.TabIndex = 36;
             // 
             // button3
@@ -167,11 +166,8 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.label37);
-            this.groupBox7.Controls.Add(this.label22);
             this.groupBox7.Controls.Add(this.label23);
             this.groupBox7.Controls.Add(this.ResultTM);
-            this.groupBox7.Controls.Add(this.label38);
             this.groupBox7.Controls.Add(this.SIZEStrok);
             this.groupBox7.Controls.Add(this.label21);
             this.groupBox7.Controls.Add(this.label20);
@@ -183,17 +179,6 @@
             this.groupBox7.Size = new System.Drawing.Size(476, 278);
             this.groupBox7.TabIndex = 91;
             this.groupBox7.TabStop = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(51, 168);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(24, 25);
-            this.label22.TabIndex = 63;
-            this.label22.Text = "?";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -214,28 +199,6 @@
             this.ResultTM.Size = new System.Drawing.Size(72, 25);
             this.ResultTM.TabIndex = 61;
             this.ResultTM.Text = "Ответ";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label38.Location = new System.Drawing.Point(51, 130);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(24, 25);
-            this.label38.TabIndex = 58;
-            this.label38.Text = "?";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label37.Location = new System.Drawing.Point(58, 17);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(24, 25);
-            this.label37.TabIndex = 57;
-            this.label37.Text = "?";
-            this.label37.Click += new System.EventHandler(this.label37_Click);
             // 
             // SIZEStrok
             // 
@@ -294,7 +257,7 @@
             this.groupBox4.Controls.Add(this.groupBox5);
             this.groupBox4.Location = new System.Drawing.Point(52, 871);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1188, 641);
+            this.groupBox4.Size = new System.Drawing.Size(1188, 585);
             this.groupBox4.TabIndex = 90;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = " Выберите множители трудоемкости посе проработки для детальной оценки архитектуры" +
@@ -311,7 +274,7 @@
             this.groupBox9.Controls.Add(this.label35);
             this.groupBox9.Location = new System.Drawing.Point(564, 331);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(583, 301);
+            this.groupBox9.Size = new System.Drawing.Size(583, 210);
             this.groupBox9.TabIndex = 90;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Параметры проекта";
@@ -1072,7 +1035,7 @@
             this.groupBox1.Size = new System.Drawing.Size(211, 124);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Расчет EAF";
+            this.groupBox1.Text = "Расчитать EAF";
             // 
             // label39
             // 
@@ -1091,7 +1054,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 23);
             this.button2.TabIndex = 36;
-            this.button2.Text = "Расчет ";
+            this.button2.Text = "Расчитать ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -1198,12 +1161,22 @@
             this.comboBox4.Size = new System.Drawing.Size(200, 24);
             this.comboBox4.TabIndex = 13;
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label42.Location = new System.Drawing.Point(54, 1492);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(548, 25);
+            this.label42.TabIndex = 93;
+            this.label42.Text = "Введите объем программного продукта в тысячах строк";
+            // 
             // cocomo2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1045, 770);
+            this.ClientSize = new System.Drawing.Size(1219, 927);
             this.Controls.Add(this.panel1);
             this.Name = "cocomo2";
             this.Text = "COCOMO cocomo2";
@@ -1234,12 +1207,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label ResultTM;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox SIZEStrok;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -1324,5 +1294,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label42;
     }
 }

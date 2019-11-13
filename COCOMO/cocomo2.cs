@@ -728,7 +728,11 @@ namespace COCOMO
             e.Handled = !(char.IsDigit(c) || c == ',' || c == '\b');
         }
 
-
+        private void label37_Click_1(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(label8, "объем программного продукта в тысячах строк исходного текста (Kilo of Source Line of Code – KSLOC)");
+        }
 
         private void comboBox35_SelectedIndexChanged(object sender, EventArgs e)//многоабанентская разработка
         {

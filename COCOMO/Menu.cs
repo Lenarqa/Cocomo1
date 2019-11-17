@@ -44,8 +44,14 @@ namespace COCOMO
 
         private void button3_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("C:\\Users\\lenar\\OneDrive\\Рабочий стол\\3 курс 1 семест\\ИМ Миньков\\COCOMO\\COCOMO\\COCOMO\\Resources\\Spravka.pdf");
-            //System.Diagnostics.Process.Start("\\Resources\\Spravka.pdf");
+            //String filename = "Cправка.pdf";
+            //System.Diagnostics.Process.Start("C:\\Users\\lenar\\OneDrive\\Рабочий стол\\3 курс 1 семест\\ИМ Миньков\\COCOMO\\COCOMO\\COCOMO\\Resources\\Spravka.pdf");
+            //System.Diagnostics.Process.Start(filename);
+            //string filename = Application.StartupPath;
+
+            //filename = System.IO.Path.GetFullPath(System.IO.Path.Combine(filename, ".\\Справка.pdf"));
+            //System.Diagnostics.Process.Start(filename);
+            System.Diagnostics.Process.Start(".\\Справка.pdf");
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -69,5 +75,12 @@ namespace COCOMO
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible)
+            {
+                panel1.Visible = false;
+            }
+        }
     }
 }

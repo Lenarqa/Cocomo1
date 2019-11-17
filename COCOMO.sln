@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COCOMO", "COCOMO\COCOMO.csproj", "{B3591CC3-25D6-4102-A497-E0DD229445F3}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1Proba", "Setup1Proba\Setup1Proba.vdproj", "{77778643-4140-4FB1-96F8-D5561380766F}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{312D8C12-49BB-48BD-8E25-853382F6CD64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{B3591CC3-25D6-4102-A497-E0DD229445F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3591CC3-25D6-4102-A497-E0DD229445F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3591CC3-25D6-4102-A497-E0DD229445F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77778643-4140-4FB1-96F8-D5561380766F}.Debug|Any CPU.ActiveCfg = Debug
-		{77778643-4140-4FB1-96F8-D5561380766F}.Release|Any CPU.ActiveCfg = Release
+		{312D8C12-49BB-48BD-8E25-853382F6CD64}.Debug|Any CPU.ActiveCfg = Debug
+		{312D8C12-49BB-48BD-8E25-853382F6CD64}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

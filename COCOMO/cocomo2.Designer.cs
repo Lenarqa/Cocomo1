@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -117,7 +118,6 @@
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label42 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -153,6 +153,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1254, 2013);
             this.panel1.TabIndex = 36;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label42.Location = new System.Drawing.Point(54, 1492);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(548, 25);
+            this.label42.TabIndex = 93;
+            this.label42.Text = "Введите объем программного продукта в тысячах строк";
             // 
             // button3
             // 
@@ -1072,12 +1082,12 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(48, 488);
+            this.label16.Location = new System.Drawing.Point(65, 484);
             this.label16.MaximumSize = new System.Drawing.Size(300, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(137, 20);
+            this.label16.Size = new System.Drawing.Size(226, 20);
             this.label16.TabIndex = 30;
-            this.label16.Text = "Стадия оценки";
+            this.label16.Text = "Выберите cтадию оценки";
             // 
             // label10
             // 
@@ -1095,7 +1105,7 @@
             this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(250, 484);
+            this.comboBox12.Location = new System.Drawing.Point(312, 484);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(200, 24);
             this.comboBox12.TabIndex = 25;
@@ -1160,16 +1170,6 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(200, 24);
             this.comboBox4.TabIndex = 13;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label42.Location = new System.Drawing.Point(54, 1492);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(548, 25);
-            this.label42.TabIndex = 93;
-            this.label42.Text = "Введите объем программного продукта в тысячах строк";
             // 
             // cocomo2
             // 

@@ -131,6 +131,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Resources\Spravka.pdf" />
+    <None Include="Справка.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
